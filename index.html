@@ -10,22 +10,21 @@
 </head>
 <body>
   <main class="container">
-    <div class="top">
-      <div class="title">
-        <h1 id="logo">Home & away</h1>
-      </div>
+   
       <nav>
         <ul class="nav-list">
           <li class="nav-list-item"><a href="#about" class="link-about">About</a></li>
           <li class="nav-list-item"><a href="#blog">Blog</a></li>
+          <li class="nav-list-item logo">Home & away</li>
           <li class="nav-list-item"><a href="#gallery">Gallery</a></li>
           <li class="nav-list-item"><a href="#contact" class="link-contact">Contact</a></li>
         </ul>
+        <div class="mobile-logo">Home & away</div>
         <div class="hamburger"><i class="fas fa-bars"></i></div>
       </nav>
-    </div>
-      <header>
 
+      <header>
+        <div class="about-photo-2"></div>
       </header>
       <section class="about" id="about">
         <div class="about-photo"></div>
@@ -49,14 +48,16 @@
         </div>
       </section>
       <section class="gallery" id="gallery">
-        <div class="image one"></div>
-        <div class="image two"></div>
-        <div class="image three"></div>
-        <div class="image four"></div>
-        <div class="image five"></div>
-        <div class="image six"></div>
-        <div class="image seven"></div>
-        <div class="image eight"></div>
+        <div class="image one"><img src="images/vineyard.jpg"></div>
+        <div class="image two"><img src="images/alpine.jpg"></div>
+        <div class="image three"><img src="images/flag.jpg"></div>
+        <div class="image four"><img src="images/venice.jpg"></div>
+        <div class="image five"><img src="images/city.jpg"></div>
+        <div class="image six"><img src="images/tunnel.jpg"></div>
+        <div class="image seven"><img src="images/beach-cave.jpg"></div>
+        <div class="image eight"><img src="images/seaside.jpg"></div>
+        <div class="overlay"></div>
+        <div class="modal"><img src=""><div class="close"><i class="fas fa-times"></i></div></div>
       </section>
       <section class="contact" id="contact">
         <div class="contact-wrapper">
@@ -76,8 +77,6 @@
       </section>
       <button onclick="topFunction()" id="scrollBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> 
    </main>
-   <script src="noframework.waypoints.min.js"></script>
-   <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
    <script src="script.js"></script>
 </body>
 </html>
