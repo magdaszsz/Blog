@@ -400,25 +400,26 @@ header {
   grid-column: 7/span 2;
 }
 
-
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: rgba(0,0,0, .5);
   height: 100%;
   width: 100%;
   display: none;
+  z-index: 99;
 }
 
 .modal {
   display: none;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 10%;
   left: 20%;
   right: 20%;
-  height: 100%;
+  bottom: 10%;
   width: 60%;
+  z-index: 99;
 }
 
 .modal img:hover {
@@ -496,11 +497,12 @@ header {
   }
 
   .modal {
-    grid-row: 2/span 4;
-    grid-column: 1/span 6;
+   width: 90%;
+   left: 5%;
+   right: 5%;
+   top: 20%;
+   bottom: 20%;
   }
-
-  
 }
 
 /*************** CONTACT *********************/
@@ -666,11 +668,15 @@ input::-webkit-input-placeholder {
   }
 
   .modal {
-    grid-row: 2/span 5;
-    grid-column: 1/span 6;
+    width: 80%;
+    height: 70%;
+    top: 15%;
+    right: 10%;
+    bottom: 15%;
+    left: 10%;
   }
-
-  .small {
+ 
+   .small {
     height: 12vh;
   }
 
