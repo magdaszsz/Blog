@@ -339,6 +339,14 @@ header {
   }
 }
 
+@media (max-width: 850px) {
+  .articles button {
+    transform: translateY(0);
+    z-index: 1;
+    color: white;
+  }
+}
+
 /************** GALLERY *******************/
 
 .gallery {
@@ -587,6 +595,10 @@ input::-webkit-input-placeholder {
   background: #925554;
 }
 
+button:active {
+  background: #925554;
+}
+
 .socials {
   font-size: 20px;
   margin-top: 20px;
@@ -664,7 +676,7 @@ input::-webkit-input-placeholder {
   }
 
   .nav-list {
-    top: 45px;
+    top: 48px;
   }
 
   .modal {
