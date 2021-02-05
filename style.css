@@ -16,7 +16,7 @@ html {
   position: relative;
 }
 
-.logo {
+.nav__list__item--logo {
   font-size: 35px;
   font-style: italic;
   color: #925554;
@@ -33,7 +33,7 @@ html {
   font-size: 20px;
 }
 
-.nav-list {
+.nav__list {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -55,14 +55,14 @@ nav {
   display: flex;
 }
 
-.nav-list a {
+.nav__list a {
   text-decoration: none;
   color: rgb(121, 109, 109);
   font-size: 1.2em;
   transition: color .5s;
 }
 
-.nav-list a:hover {
+.nav__list a:hover {
   color:#925554;
 }
 
@@ -73,12 +73,12 @@ header {
   background-attachment: fixed;
 }
 
-.hamburger {
+.nav__hamburger {
   display: none;
   color:#925554;
 }
 
-.mobile-logo {
+.nav__mobile-logo {
   font-size: 25px;
   font-style: italic;
   color: #925554;
@@ -103,12 +103,12 @@ header {
     flex-direction: column;
   }
 
-  .mobile-logo {
+  .nav__mobile-logo {
     display: block;
     margin: 20px;
   }
 
-  .logo {
+  .nav__list__item--logo {
     display: none;
   }
 
@@ -129,7 +129,7 @@ header {
     height: 9vh;
   }
 
-  .nav-list {
+  .nav__list {
     display: block;
     width: 100%;
     height: auto;
@@ -142,11 +142,11 @@ header {
     z-index: 1000;
   }
 
-  .nav-list li {
+  .nav__list__item {
     margin: 10px;
   }
 
-  .contact-wrapper {
+  .contact__wrapper {
     z-index: -1;
   }
 
@@ -154,11 +154,11 @@ header {
     left: 0;
   }
 
-  nav.small .nav-list {
+  nav.small .nav__list {
     top: 45px;
   }
 
-  .hamburger {
+  .nav__hamburger {
     display: block;
     cursor: pointer;
     margin: 20px;
@@ -166,7 +166,7 @@ header {
     background: transparent;
   }
 
-  .hamburger:active {
+  .nav__hamburger:active {
     background: transparent;
   }
 }
@@ -182,7 +182,7 @@ header {
   flex-direction: row-reverse;
 }
 
-.about-photo {
+.about__photo {
   background-image: url(images/woman-in-grey-long-sleeved-dress-sitting-on-window-1109596.jpg);
   width: 40%;
   background-size: cover;
@@ -192,7 +192,7 @@ header {
   margin-left: 50px;
 }
 
-.about-photo-2 {
+.header__photo {
   background-image: url(images/woman-2.jpg);
   display: none;
   height: 200px;
@@ -200,21 +200,21 @@ header {
   margin-top: -250px;
 }
 
-.about-text {
+.about__text {
   width: 50%;
   height: 100%;
   padding: 40px;
   line-height: 1.7em;
 }
 
-.about-text h2 {
+.about__text h2 {
   font-family: 'Satisfy', cursive;
 }
 
-.about-text h2:first-of-type {
+.about__text h2:first-of-type {
   margin-bottom: 20px;
 }
-.about-text h2:last-of-type {
+.about__text h2:last-of-type {
   text-align: right;
   margin-top: 30px;
 }
@@ -224,15 +224,15 @@ header {
     flex-direction: column;
   }
 
-  .about-photo {
+  .about__photo {
     display: none;
   }
 
-  .about-text {
+  .about__text {
     width: 100%;
   }
 
-  .about-photo-2 {
+  .header__photo {
     display: block;
   }
 
@@ -556,7 +556,7 @@ header {
   justify-content: center  
 }
 
-.contact-wrapper {
+.contact__wrapper {
   width: 50%;
   margin: 0 auto;
   display: flex;
@@ -565,7 +565,7 @@ header {
   color: rgb(87, 79, 79);
 }
 
-.contact-wrapper h2 {
+.contact__wrapper h2 {
   text-align: center;  
   padding: 30px;
 }
@@ -629,13 +629,13 @@ button:active {
 }
 
 @media (max-width: 850px) {
-  .contact-wrapper {
+  .contact__wrapper {
     width: 80%;
     padding-bottom: 10px;
   }
 
-  .contact-wrapper h2, 
-  .contact-wrapper h3  {
+  .contact__wrapper h2, 
+  .contact__wrapper h3  {
     font-size: 20px;
   }
 
@@ -680,7 +680,7 @@ button:active {
     margin-top: 15vh;
   }
 
-  nav.small .nav-list {
+  nav.small .nav__list {
     top: 35px;
   }
 
@@ -688,7 +688,7 @@ button:active {
     height: 17vh;
   }
 
-  .nav-list {
+  .nav__list {
     top: 48px;
   }
 

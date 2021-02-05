@@ -11,55 +11,55 @@
 <body>
   <main class="container">
     <nav>
-        <ul class="nav-list">
-          <li class="nav-list-item"><a href="#about" class="link-about">About</a></li>
-          <li class="nav-list-item"><a href="#blog">Blog</a></li>
-          <li class="nav-list-item logo">Home & away</li>
-          <li class="nav-list-item"><a href="#gallery">Gallery</a></li>
-          <li class="nav-list-item"><a href="#contact" class="link-contact">Contact</a></li>
+        <ul class="nav__list">
+          <li class="nav__list__item"><a href="#about">About</a></li>
+          <li class="nav__list__item"><a href="#blog">Blog</a></li>
+          <li class="nav__list__item--logo">Home & away</li>
+          <li class="nav__list__item"><a href="#gallery">Gallery</a></li>
+          <li class="nav__list__item"><a href="#contact">Contact</a></li>
         </ul>
-        <div class="mobile-logo">Home & away</div>
-        <button class="hamburger"><i class="fas fa-bars"></i></button>
+        <div class="nav__mobile-logo">Home & away</div>
+        <button class="nav__hamburger"><i class="fas fa-bars"></i></button>
       </nav>
 
       <header>
-        <div class="about-photo-2"></div>
+        <div class="header__photo"></div>
       </header>
       <section class="about" id="about">
-        <div class="about-photo"></div>
-        <div class="about-text">
+        <div class="about__photo"></div>
+        <div class="about__text">
           <h2>Welcome to my blog!</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro magni tempora labore id, sed iusto modi aperiam recusandae dolores molestias quibusdam animi nisi. Sed, voluptas alias? Doloremque, quam sunt nihil porro nostrum unde harum omnis temporibus accusamus. Veniam commodi fuga earum ut quisquam nesciunt numquam sapiente. Labore iste soluta nemo! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti iusto veniam, quos expedita neque harum ad, odit quod adipisci quia. Aliquid fugit hic id enim iure? Magni optio alias natus iste neque magnam quos obcaecati molestiae, quo provident corporis minus eveniet aliquam nihil. Est quibusdam inventore ipsum reiciendis nulla.</p>
           <h2>Elodie</h2>
         </div>
       </section>
       <section class="articles" id="blog">
-        <div class="art">
+        <article class="art">
           <div class="article-1-image img"><button>Read more</button></div>
           <div class="article-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae expedita magni debitis mollitia eaque consequatur nobis sequi enim nemo dolorem dolor ipsa optio veniam ratione magnam iusto praesentium, voluptatibus voluptates? Nisi totam vitae, pariatur quos modi, qui iure nihil reprehenderit atque obcaecati, temporibus nobis cupiditate asperiores aliquam quia aut architecto.</div>
-        </div>
-        <div class="art">
+        </article>
+        <article class="art">
           <div class="article-2-image img"><button>Read more</button></div>
           <div class="article-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis accusantium repellat distinctio magnam aspernatur illo ut aliquam in sapiente dicta. Dolorem fugiat, ab corrupti quasi inventore accusamus atque magni et cum possimus fugit dolorum omnis architecto. Sunt, maxime. Quod fugit natus unde. Quia ea consequatur officia nam cum eum aut.</div>
-        </div>
-        <div class="art">
+        </article>
+        <article class="art">
           <div class="article-3-image img"><button>Read more</button></div>
           <div class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos incidunt asperiores maiores exercitationem facilis nulla quisquam animi maxime deserunt aliquam tempora officia eveniet temporibus nam, mollitia rerum omnis atque libero beatae architecto voluptate possimus magnam numquam? Beatae fugit nostrum quia incidunt neque ratione cum facilis, libero quisquam corrupti minus aperiam!</div>
-        </div>
+        </article>
       </section>
       <section class="gallery" id="gallery">
-        <div class="image one"><img src="images/vineyard.jpg"></div>
-        <div class="image two"><img src="images/alpine.jpg"></div>
-        <div class="image three"><img src="images/flag.jpg"></div>
-        <div class="image four"><img src="images/venice.jpg"></div>
-        <div class="image five"><img src="images/city.jpg"></div>
-        <div class="image six"><img src="images/tunnel.jpg"></div>
-        <div class="image seven"><img src="images/beach-cave.jpg"></div>
-        <div class="image eight"><img src="images/seaside.jpg"></div>
+        <div class="gallery__image one"><img src="images/vineyard.jpg" alt="vineyard"></div>
+        <div class="gallery__image two"><img src="images/alpine.jpg" alt="mountains"></div>
+        <div class="gallery__image three"><img src="images/flag.jpg" alt="italian flag"></div>
+        <div class="gallery__image four"><img src="images/venice.jpg" alt="venice"></div>
+        <div class="gallery__image five"><img src="images/city.jpg" alt="city"></div>
+        <div class="gallery__image six"><img src="images/tunnel.jpg" alt="tunnel"></div>
+        <div class="gallery__image seven"><img src="images/beach-cave.jpg" alt="cave"></div>
+        <div class="gallery__image eight"><img src="images/seaside.jpg" alt="seaside"></div>
         <div class="overlay"></div>
         <div class="modal"><img src=""><div class="close"><i class="fas fa-times"></i></div></div>
       </section>
       <section class="contact" id="contact">
-        <div class="contact-wrapper">
+        <div class="contact__wrapper">
           <h2>Subscribe to be notified when I post</h2>
           <form>
             <input type="text" placeholder="Name">
@@ -67,7 +67,7 @@
             <button type="button">Subscribe</button>
           </form>
           <div class="socials">
-             <h3>Follow me on social media</h3>
+             <h3 class="socials__icons">Follow me on social media</h3>
              <i class="fab fa-facebook-f"></i>
              <i class="fab fa-instagram"></i>
              <i class="fab fa-pinterest-p"></i>

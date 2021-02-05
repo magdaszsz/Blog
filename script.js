@@ -9,8 +9,8 @@ function scrollFunction() {
     document.documentElement.scrollTop > 100
   ) {
     document.querySelector("nav").classList.add("small");
-    document.querySelector(".logo").classList.add("smallLogo");
-    document.querySelector(".mobile-logo").classList.add("smallLogo");
+    document.querySelector(".nav__list__item--logo").classList.add("smallLogo");
+    document.querySelector(".nav__mobile-logo").classList.add("smallLogo");
   } else {
     document.querySelector("nav").classList.remove("small");
     document.querySelector(".logo").classList.remove("smallLogo");
@@ -19,6 +19,7 @@ function scrollFunction() {
 }
 
 /**************** SCROLL BUTTON ****************/
+
 
 mybutton = document.getElementById("scrollBtn");
 
@@ -36,8 +37,8 @@ function topFunction() {
 
 /****************** SLIDE IN MENU IN MOBILE ***********/
 
-const toggler = document.querySelector(".hamburger");
-const mobileMenu = document.querySelector(".nav-list");
+const toggler = document.querySelector(".nav__hamburger");
+const mobileMenu = document.querySelector(".nav__list");
 toggler.addEventListener("click", function () {
   mobileMenu.classList.toggle("show");
 });
